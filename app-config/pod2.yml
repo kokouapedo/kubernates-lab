@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: pod2
+ labels:
+  app: app1
+  env: qa
+spec:
+ containers:
+   - name: dev-pod
+     image: httpd
+   - name: ubuntu
+     image: ubuntu
+     command: ["sleep" , "10000000"]
+       
+       

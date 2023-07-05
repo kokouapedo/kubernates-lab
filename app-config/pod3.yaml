@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod3
+  namespace: dev
+  labels:
+   app: utrains
+spec:
+  containers:
+    - name: app
+      image: httpd
+      ports:
+        - containerPort: 80
+          name: http
+          protocol: TCP
